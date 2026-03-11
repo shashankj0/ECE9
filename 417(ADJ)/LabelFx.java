@@ -1,0 +1,28 @@
+import javafx.application.*;
+import javafx.scene.*;
+import javafx.stage.*;
+import javafx.scene.layout.*;
+import javafx.scene.control.*;
+import javafx.geometry.*;
+import javafx.scene.paint.*;
+public class LabelFx extends Application
+{
+public void start(Stage st)throws Exception
+{
+FlowPane fp=new Flowpane();
+Label l1=new label("AITS_Rajampet");
+Label l2=new label("AITS_Tirupati");
+Label L3=new label("AITS_Kadapa");
+Label L4=new label("AITS_Rajampet");
+fp.getChildren().addAll(11,12,13,14);
+fp.setAlignmet(pos.BOTTOM_CENTER);
+Scene s=new Scene(fp,300,300);
+st.Set Scene(s);
+st.SetTitle("javafx label demonstration");
+st.show();
+}
+public static void main(String args[])
+{
+launch(args);
+}
+}

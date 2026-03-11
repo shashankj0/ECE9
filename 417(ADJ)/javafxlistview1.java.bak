@@ -1,0 +1,32 @@
+import javafx.application.application.*;
+import javafx.collections.*;
+import javafx.geometry.Insets.*;
+import javafx.scene.*;
+import javafx.scene.control.*;
+import javafx.scene.control.*;
+import javafx.scene.layout.*;
+import javafx.scene.text.*;
+import javafx.stage.*;
+public class javafxlistview1 extends Applications;
+public void sart(Stage stage)
+{
+Label label=new Label("educational qualification:");
+Font font=Font.font("pujitha",Fontweight.BOLD,Fontposture.Regular,12);
+label.setFont(font);
+observableList<String>names=FxCollections.obesarvable Arraylist("engineering","mca","mba","mtech","mphil");
+Listview<String>listview=newListview<String>(names);
+listview.setMaxsize(200,160);
+VBox layout=new VBox(10);
+layout.setpadding(new Insets(5,5,5,50));
+layout.getchildren().add ALL(label,listview);
+layout.getstyle("-fx-background-color:BEIGE");
+Scene scene=new scene(layout,400,300);
+stage.setTitle("Listview Example");
+satge.setScene(scene);
+satge.show();
+}
+public sattic void main(sring Args[])
+{
+launch(args);
+}
+}
